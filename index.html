@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>City Weather</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  
+  <body>
+
+    <!-- 1. Header Section  -->
+    <header>
+      <div class="logo">
+        <span id="app-title">City Weather</span>
+      </div>
+      <div class="date-display">
+        <div class="day" id="currentDay">Today</div>
+        <div class="full-date" id="currentDate">01/01/2025</div>
+      </div>
+    </header>
+       <!-- 2. The Container -->
+    <div class="container">
+
+        <!-- 2.1 The Sidebar -->
+      <div class="sidebar">
+
+        <!--2.1.1 sidebar profil -->
+        <div class="profile">
+          <div class="profile-img">🌞</div>
+          <div class="profile-name" id="profileName">City Weather</div>
+          <div class="profile-email" id="profileEmail">
+            Weather@CityWeather.com
+          </div>
+        </div>
+
+        <!--2.1.2 sidebar button -->
+        <div class="sidebar-buttons">
+          <button class="sidebar-button" data-section="taskList">
+            📋 Task List
+          </button>
+          <button class="sidebar-button" data-section="digitalVisionBoard">
+            📈 Digital Vision Board
+          </button>
+          <button class="sidebar-button" data-section="macroCalculator">
+            🧮 Macro Calculator
+          </button>
+          <button class="sidebar-button" data-section="workoutMealPlanner">
+            💪 Workout/Meal Planner
+          </button>
+          <button class="sidebar-button" data-section="monthlyTracker">
+            💰 Monthly Tracker
+          </button>
+          <button class="sidebar-button" data-section="moodTracker">
+            📈 Mood Tracker
+          </button>
+          <button class="sidebar-button" data-section="countdownTimer">
+            🕒 Countdown Timer
+          </button>
+          <button class="sidebar-button" data-section="qotdGenerator">
+            💬 QOTD Generator
+          </button>
+          <button class="sidebar-button active" data-section="cityWeather">
+            🌞 City Weather
+          </button>
+        </div>
+
+      </div>
+
+     <!-- 2.2 The main content -->
+      <div class="main-content">
+
+     <!-- 2.3  The weather Section -->
+        <div class="weather-widget">
+          <h1 class="widget-title">Live City Weather Search</h1>
+
+
+          <!-- 2.3.1  The Search Section -->
+          <div class="search-area">
+            <input
+              type="text"
+              id="city-input"
+              placeholder="Enter city name..."
+            />
+            <button id="search-button">Search Weather</button>
+          </div>
+
+          <!-- 2.3.2 The Message Section -->
+          <div id="message-box" class="message-box hidden">
+            <span id="message-text">There's no message Yet</span>
+          </div>
+
+          <!-- 2.3.3 The Display Section -->
+          <div class="weather-display-card">
+            <h2 id="city-name">Search for a City</h2>
+            <div class="weather-icon">
+              <span id="weather-emoji">🤔</span>
+            </div>
+            <div class="temperature">--°C</div>
+            <div class="condition">N/A</div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>

@@ -162,6 +162,6 @@ function updatewaetherDisplay(data) {
   cityNameElement.innerHTML = data.name;
   temperatureElement.innerHTML = `${Math.round(data.main.temp)}°C`;
   conditionElement.innerHTML = weather.desc;
-  weatherIconElement.innerHTML = emojimap[weather.icon] || "?";
+  weatherIconElement.innerHTML = emojiMap[weather.icon] || "?";
 }
 

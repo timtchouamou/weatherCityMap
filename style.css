@@ -30,8 +30,9 @@ body {
   flex-grow: 1;
   padding: 20px;
   padding-top: 50px;
-  overflow: auto;
+  /* overflow: auto; */
 }
+
 /* HEADER STYLES */
 header {
   display: flex;
@@ -76,14 +77,15 @@ header .logo::before {
 
 /* SIDEBAR STYLES */
 .sidebar {
-  width: 200px;
-  min-width: 200px;
+  width: 250px;
+  min-width: 250px;
   background: rgb(4, 9, 29);
   padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+   overflow: auto;
 }
 
 .profile {
@@ -115,6 +117,7 @@ header .logo::before {
   opacity: 0.8;
   color: #bbb;
 }
+
 
 .sidebar-button {
   background-color: transparent;
@@ -275,8 +278,6 @@ header .logo::before {
     text-align: center;
 }
 
-/*Responsive  */
-
 /* this for Small phones, tablets, large smart phones */
 @media (max-width: 768px){ 
     
@@ -311,3 +312,6 @@ header .logo::before {
   }
 
 } 
+
+
+

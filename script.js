@@ -90,7 +90,7 @@ async function fetchWeatherFromAPI(city) {
     );
     return;
   }
-  weatherIconElement.innerHTML = "🤔"// Loading emoji
+  weatherIconElement.innerHTML = "⏳"// Loading emoji
 
   try {
     const resp = await fetch(`${BASE_URL}?q=${city}&appid=${API_KEY}&units=metric`);
@@ -134,25 +134,24 @@ async function fetchWeatherFromAPI(city) {
 
 function updatewaetherDisplay(data) {
   const emojiMap = {
-    "01d": "1",
-    "01n": "2",
-    "02d": "3",
-    "02n": "4",
-    "03d": "5",
-    "03n": "6",
-    "04d": "7",
-    "04n": "8",
-    "09d": "9",
-    "09n": "10",
-    "10d": "11",
-    "10n": "12",
-    "11d": "13",
-    "11n": "14",
-    "13d": "15",
-    "13n": "16",
-    "50d": "17",
-    "50n": "18",
-
+     "01d": "☀",
+    "01n": "🌙",
+    "02d": "🌤️",
+    "02n": "☔",
+    "03d": "☔",
+    "03n": "☔",
+    "04d": "overcast",
+    "04n": "overcast",
+    "09d": "🌧",
+    "09n": "🌧",
+    "10d": "🌧️",
+    "10n": "🌧",
+    "11d": "🌨️",
+    "11n": "🌨️",
+    "13d": "❄️",
+    "13n": "❄️",
+    "50d": "🌫️",
+    "50n": "🌫️",
   };
   const weather = data.weather.map((w) => ({
     desc: w.description,

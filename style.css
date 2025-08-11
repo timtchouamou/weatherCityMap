@@ -305,7 +305,7 @@ header .logo::before {
   }
 
   #weather-emoji, .temperature{
-   font-size: 50px;
+   font-size: 20px;
   }
   .condition{
     font-size: 25px;

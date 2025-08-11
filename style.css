@@ -76,8 +76,8 @@ header .logo::before {
 
 /* SIDEBAR STYLES */
 .sidebar {
-  width: 250px;
-  min-width: 250px;
+  width: 200px;
+  min-width: 200px;
   background: rgb(4, 9, 29);
   padding: 20px;
   display: flex;

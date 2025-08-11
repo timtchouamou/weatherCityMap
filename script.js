@@ -93,7 +93,7 @@ async function fetchWeatherFromAPI(city) {
   weatherIconElement.innerHTML = "🤔"// Loading emoji
 
   try {
-    const resp = await fetch(`${BASE_URL}?q=${city}&appid=${API_KEY}&inits=metric`);
+    const resp = await fetch(`${BASE_URL}?q=${city}&appid=${API_KEY}&units=metric`);
     console.log(resp)
 
     if(!resp.ok) {

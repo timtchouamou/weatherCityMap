@@ -32,7 +32,6 @@ body {
   padding-top: 50px;
   overflow: auto;
 }
-
 /* HEADER STYLES */
 header {
   display: flex;
@@ -275,6 +274,46 @@ header .logo::before {
     font-size: 32px;
     text-align: center;
 }
+
+
+
+/*Responsive  */
+
+/* this for Small phones, tablets, large smart phones */
+@media (max-width: 768px){ 
+   .sidebar-button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 20px;
+  width: 100%;
+  text-align: left;
+  margin-top: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+} 
+
+/* this for Small phones */
+@media (max-width: 480px){ 
+  
+   /* SIDEBAR STYLES */
+.sidebar {
+  width: 250px;
+  min-width: 250px;
+  background: rgb(4, 9, 29);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+}
+
+} 
 
 
 

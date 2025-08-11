@@ -275,83 +275,39 @@ header .logo::before {
     text-align: center;
 }
 
-
-
 /*Responsive  */
 
 /* this for Small phones, tablets, large smart phones */
 @media (max-width: 768px){ 
-   .sidebar-button {
-  background-color: transparent;
-  color: white;
-  border: none;
-  border-radius: 10px;
-  padding: 12px 20px;
-  width: 100%;
-  text-align: left;
-  margin-top: 10px;
-  cursor: pointer;
-  font-weight: 500;
-  display: flex;
-  align-items: center;
-  transition: background-color 0.3s ease;
-}
+    
+
 } 
 
 /* this for Small phones */
 @media (max-width: 480px){ 
-  
-   /* SIDEBAR STYLES */
-.sidebar {
-  width: 150px;
-  min-width: 150px;
-  overflow: auto;
-}
-
-  
-.message-box {
-    padding: 13px 19px;
-    text-align: center;
-    width: calc(100% - 20px); /* Adjust width to account for search-area padding */
-    font-size: 12px;
-  
-}
-
-.message-box.hidden {
-    display: none;
-}
-
-.weather-display-card {
+    .weather-widget{
+        width: 12px;
+    }
+   .search-area{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-    padding: 48px 0;
-}
+   }
+   #city-input{
+    width: 150px;
+   }
+  .message-box{
+    width: 300px;
 
-.weather-display-card h2 {
-    font-size: xL-large;
-    font-weight: 600;
-  
-}
+  }
+  .city-name{
+    height: 12px;
+  }
 
-.weather-icon {
-    font-size: 50px; /* Large emoji size */
-  
-  
-
-.temperature {
-    font-size: 50px; /* Very large temperature text */
-    font-weight: 400;
-    
-}
-
-.condition {
-    font-size: 20px;
-}
+  #weather-emoji, .temperature{
+   font-size: 50px;
+  }
+  .condition{
+    font-size: 25px;
+  }
 
 } 
-
-
-
